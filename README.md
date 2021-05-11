@@ -6,7 +6,7 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 
 * Matheus Fortes Vimieiro Lage
 * Vinicius Andreata Dumont
-* Nome completo do aluno 3
+* Davi Lorenzo Bmabirra Braga
 * Nome completo do aluno 4
 
 ## Professores responsáveis
