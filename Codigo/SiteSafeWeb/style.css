@@ -1,0 +1,15 @@
+main img{
+    max-width: 80vw;
+}
+
+.container{
+    width: 100%;
+}
+
+footer {
+    background: #343a40;
+    padding: 40px;
+}
+footer .a {
+    color: #f8f9fa!important
+}
