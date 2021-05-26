@@ -8,6 +8,7 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 * Vinicius Andreata Dumont
 * Samuel Lincoln de Oliveira Gomes
 * Davi Lorenzo Bambirra Braga
+* Guilherme Alves Sá e Silva
 
 ## Professores responsáveis
 
