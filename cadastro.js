@@ -2,7 +2,7 @@ window.onload = () => {
     login.onsubmit = (evento) => {
         
         let cadastro = {nome: nome.value, email: email.value, senha: senha.value};
-        localStorage.setItem('nome-',JSON.stringify(cadastro));
+        localStorage.setItem('nome',JSON.stringify(cadastro));
         alert("Cadastro feito com sucesso! Favor fazer login!");
 
         nome.value ='';
