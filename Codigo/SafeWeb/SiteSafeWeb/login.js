@@ -1,5 +1,13 @@
+//
+//
+// Disciplina: Trabalho Interdisciplinar - Aplicações Web
+// Professor: Rommel Vieira Carneiro (rommelcarneiro@gmail.com)
+//
+// Código LoginApp utilizado como exemplo para alunos de primeiro período 
+
+
 // Página inicial de Login
-const LOGIN_URL = "cadastro.html";
+const LOGIN_URL = "login.html";
 
 // Objeto para o banco de dados de usuários baseado em JSON
 var db_usuarios = {};
@@ -29,8 +37,8 @@ function generateUUID() { // Public Domain/MIT
 // Dados de usuários para serem utilizados como carga inicial
 const dadosIniciais = {
     usuarios: [
-        { "id": generateUUID (), "login": "admin", "senha": "12345", "nome": "Administrador do Sistema", "email": "admin@abc.com"},
-        { "id": generateUUID (), "login": "user", "senha": "12345", "nome": "Usuario Comum", "email": "user@abc.com"},
+        { "id": generateUUID (), "login": "admin", "senha": "123", "nome": "Administrador do Sistema", "email": "admin@abc.com"},
+        { "id": generateUUID (), "login": "user", "senha": "123", "nome": "Usuario Comum", "email": "user@abc.com"},
     ]
 };
 
@@ -76,7 +84,7 @@ function loginUser (login, senha) {
         var usuario = db_usuarios.usuarios[i];
         
         // Se encontrou login, carrega usuário corrente e salva no Session Storage
-        if (login == usuario.email && senha == usuario.senha) {
+        if (login == usuario.login && senha == usuario.senha) {
             usuarioCorrente.id = usuario.id;
             usuarioCorrente.login = usuario.login;
             usuarioCorrente.email = usuario.email;
