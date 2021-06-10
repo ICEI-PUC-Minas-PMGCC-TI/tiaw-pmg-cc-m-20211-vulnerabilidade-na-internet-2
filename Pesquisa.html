@@ -40,26 +40,37 @@
                     <a class="nav-link" href="Pesquisa.html">Procure por uma loja!  </a>
                         </li>
                     </ul>
-            
+                    <script src="searchbar.js"></script>        
                     </div>
                 </div>
             </form>
         </div>
     </div>
-      <script src="searchbar.js"></script>
   </nav>
 </header>
 
 <main>
-   <input id="searchbar" onkeyup="Buscar_Loja()" type="text" name="search" placeholder="Digite o nome da loja">
-   
-    <ol id='lista de lojas'>
-        <li class="lojas">Casas Bahia</li>
-        <li class="lojas">Lojas Americanas</li>
-        <li class="lojas">Ponto Frio</li>
-        <li class="lojas">Fast Shop</li>
-    </ol>
-   <script src="searchbar.js"></script>
+<table id="lista">
+    <thead>
+        <tr>
+            <th><div>Nome</div><div><input id="filtro-nome"/></div></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lojas Americanas</td>
+        </tr>
+        <tr>
+            <td>Fast Shop</td>
+        </tr>
+        <tr>
+            <td>Casas Bahia</td>
+        </tr>
+        <tr>
+            <td>Ponto Frio</td>
+        </tr>
+    </tbody>
+</table>
 </body>
 </main>
   
