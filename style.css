@@ -140,29 +140,14 @@ label {
     position: static
 }
 
-#searchbar{
-    margin-left: 15%;
-    padding:15px;
-    border-radius: 10px;
-  }
+table {
+    border-collapse: collapse;
+}
+table thead tr {
+    background-color: #ddd;
+    border-bottom: 2px solid #fff;
+}
 
-  input[type=text] {
-     width: 30%;
-     -webkit-transition: width 0.15s ease-in-out;
-     transition: width 0.15s ease-in-out;
-  }
-
-input[type=text]:focus {
-    width: 70%;
-  }
-
- #list{
-   font-size:  1.5em;
-   margin-left: 90px;
-   text-align: center;
-  }
-
- .lojas{
-  display: list-item;    
- } 
-
+table th, table td {
+    padding: 2px 10px;
+}
