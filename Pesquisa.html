@@ -53,20 +53,49 @@
 <body>
     <input type="text" id="myInput" onkeyup="searchbar()" placeholder="Busque por uma loja">
 
-    <ul id="myUL">
-      <li><div class="card-deck">
-                <div class="card">
-                  <img src="logo-lojas-americanas-2048.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title" style="color: rgb(0, 153, 255);">Lojas Americanas</h5>
-                    </div>
-                 </div>
-          </li>
-                    
-      <li><a href="#">Fast Shop</a></li>
-    
-      <li><a href="#">Amazon</a></li>
-      <li><a href="#">Casas Bahia</a></li>
+    <ul id="listaLojas">
+        <h2>A</h2>
+        <li><a href="https://www.americanas.com.br/">Americanas</a></li>
+        <li><a href="https://www.amazon.com.br/">Amazon</a></li>
+        <h2>B</h2>
+        <h2>C</h2>
+        <li><a href="https://www.casasbahia.com.br/">Casas Bahia</a></li>
+        <li><a href="https://www.camicado.com.br/">Camicado</a></li>
+        <h2>D</h2>
+        <h2>E</h2>
+        <li><a href="https://www.elcorteingles.pt/">El Corte Ingles</a></li>
+        <h2>F</h2>
+        <li><a href="https://www.fastshop.com.br/web/">Fast Shop</a></li>
+        <h2>G</h2>
+        <h2>H</h2>
+        <h2>I</h2>
+        <h2>J</h2>
+        <h2>K</h2>
+        <li><a href="https://www.kabum.com.br/">KaBuM!</a></li>
+        <h2>L</h2>
+        <li><a href="https://www.lebiscuit.com.br/">Le Biscuit</a></li>
+        <li><a href="https://www.liderinteriores.com.br/">Líder Interiores</a></li>
+        <h2>M</h2>
+        <li><a href="https://www.magazineluiza.com.br/">Magazine Luisa</a></li>
+        <li><a href="https://www.mercadolivre.com.br/">Mercado Livre</a></li>
+        <h2>N</h2>
+        <h2>O</h2>
+        <h2>P</h2>
+        <li><a href="https://www.polishop.com.br/">Polishop</a></li>
+        <li><a href="https://www.pontofrio.com.br/">Ponto Frio</a></li>
+        <h2>Q</h2>
+        <h2>R</h2>
+        <li><a href="https://www.ricardoeletro.com.br/">Ricardo Eletro</a></li>
+        <h2>S</h2>
+        <li><a href="https://www.shoptime.com.br/">Shoptime</a></li>
+        <h2>T</h2>
+        <h2>U</h2>
+        <h2>V</h2>
+        <h2>W</h2>
+        <h2>X</h2>
+        <h2>Y</h2>
+        <h2>Z</h2>            
+        
     </ul>
 
     <script>
@@ -74,7 +103,7 @@
             var input, filter, ul, li, a, i, txtValue;
             input = document.getElementById("myInput");
             filter = input.value.toUpperCase();
-            ul = document.getElementById("myUL");
+            ul = document.getElementById("listaLojas");
             li = ul.getElementsByTagName("li");
             for (i = 0; i < li.length; i++) {
                 a = li[i].getElementsByTagName("a")[0];
