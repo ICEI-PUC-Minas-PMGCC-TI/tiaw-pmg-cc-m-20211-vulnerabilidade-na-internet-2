@@ -51,8 +51,16 @@
 
 <main>
 <body>
-    <input type="text" id="myInput" onkeyup="searchbar()" placeholder="Busque por uma loja">
-
+    <form class="form-inline my-2 my-lg-0">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="myInput" onkeyup="searchbar()" placeholder="Procure uma loja">
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-secondary btn-number">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
     <ul id="listaLojas">
         <li><h3>A</h3></li>
         <li><a href="https://www.americanas.com.br/">Americanas</a></li>
@@ -93,7 +101,7 @@
         <li><h3>T</h3></li>
         <li><h3>U</h3></li>
         <li><h3>V</h3></li>
-        <li><a href="https://www.verdemaratevoce.com.br">Verdemar</a></li>
+        <li><a href="https://www.verdemaratevoce.com.br/">Verdemar</a></li>
         <li><h3>W</h3></li>
         <li><h3>X</h3></li>
         <li><h3>Y</h3></li>
