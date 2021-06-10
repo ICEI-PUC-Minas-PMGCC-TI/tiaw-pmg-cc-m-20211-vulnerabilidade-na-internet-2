@@ -51,9 +51,11 @@
 
 <main>
 <body>
-    
-    <input type="text" id="myInput" onkeyup="searchbar()" placeholder="Procure uma loja">
-    
+    <form class="form-inline my-2 my-lg-0">
+                <div class="input-group input-group-sm">
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="myInput" onkeyup="searchbar()"placeholder="Procure uma loja">
+                </div>
+            
     <ul id="listaLojas">
         <li><h3>A</h3></li>
         <li><a href="https://www.americanas.com.br/">Americanas</a></li>
@@ -100,6 +102,7 @@
         <li><h3>Y</h3></li>
         <li><h3>Z</h3></li>          
     </ul>
+    </form>
 
     <script>
         function searchbar() {
@@ -109,7 +112,7 @@
             ul = document.getElementById("listaLojas");
             li = ul.getElementsByTagName("li");
             for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
+                a = li[i].getElementsByTagName("a","h3")[0];
                 txtValue = a.textContent || a.innerText;
                 if (txtValue.toUpperCase().indexOf(filter) > -1) {
                     li[i].style.display = "";
