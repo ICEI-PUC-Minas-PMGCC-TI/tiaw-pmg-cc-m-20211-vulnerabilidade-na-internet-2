@@ -50,27 +50,37 @@
 </header>
 
 <main>
-<table id="lista">
-    <thead>
-        <tr>
-            <th><div>Nome</div><div><input id="filtro-nome"/></div></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Lojas Americanas</td>
-        </tr>
-        <tr>
-            <td>Fast Shop</td>
-        </tr>
-        <tr>
-            <td>Casas Bahia</td>
-        </tr>
-        <tr>
-            <td>Ponto Frio</td>
-        </tr>
-    </tbody>
-</table>
+<body>
+    <input type="text" id="myInput" onkeyup="searchbar()" placeholder="Search for names..">
+
+    <ul id="myUL">
+      <li><a href="#">Lojas Americanas</a></li>
+      <li><a href="#">Fast Shop</a></li>
+    
+      <li><a href="#">Amazon</a></li>
+      <li><a href="#">Casas Bahia</a></li>
+    </ul>
+
+    <script>
+        function searchbar() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
+        
+</body>
 </main>   
 <footer class="text-light navbar-dark bg-dark">
   <div class="container">
