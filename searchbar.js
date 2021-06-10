@@ -1,10 +1,16 @@
-var filtro = document.getElementById('filtro-nome');
-var tabela = document.getElementById('lista');
-filtro.onkeyup = function() {
-    var nomeFiltro = filtro.value;
-    for (var i = 1; i < tabela.rows.length; i++) {
-        var conteudoCelula = tabela.rows[i].cells[0].innerText;
-        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
-        tabela.rows[i].style.display = corresponde ? '' : 'none';
+function myFunction() {
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = " ";
+    } else {
+      li[i].style.display = "none";
     }
-};
+  }
+}
