@@ -1,14 +1,10 @@
-function Buscar_Loja() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('lojas');
-
-    for(i=0; i< x.length;i++){
-        if(!x[i].innerHTML.toLowerCase().includes(input)){
-            x[i].style.display="none"
-        }else{
-            x[i].style.display="list-item"
-        }
-        
+var filtro = document.getElementById('filtro-nome');
+var tabela = document.getElementById('lista');
+filtro.onkeyup = function() {
+    var nomeFiltro = filtro.value;
+    for (var i = 1; i < tabela.rows.length; i++) {
+        var conteudoCelula = tabela.rows[i].cells[0].innerText;
+        var corresponde = conteudoCelula.toLowerCase().indexOf(nomeFiltro) >= 0;
+        tabela.rows[i].style.display = corresponde ? '' : 'none';
     }
-}
+};
