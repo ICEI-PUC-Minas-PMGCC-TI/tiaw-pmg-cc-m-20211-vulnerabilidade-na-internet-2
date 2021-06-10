@@ -52,23 +52,14 @@
 </header>
 
 <main>
-    <div class="container">
-        <h1>Pesquisa</h1>
-        <div id="searchWrapper">
-            <input
-                type="text"
-                name="searchBar"
-                id="searchBar"
-                placeholder="Procure por uma loja!"
-            />
-            
-            <br></br>
-  
-        
-        </div>
-        <ul id="lojaslist"></ul>
-    </div>
-    <script src="searchbar.js"></script>
+   <input id="searchbar" onkeyup="Buscar_Loja()" type="text" name="search" placeholder="Digite o nome da loja">
+   
+    <ol id='lista de lojas'>
+        <li class="lojas">Casas Bahia</li>
+        <li class="lojas">Lojas Americanas</li>
+        <li class="lojas">Ponto Frio</li>
+        <li class="lojas">Fast Shop</li>
+   
 </body>
 </main>
   
