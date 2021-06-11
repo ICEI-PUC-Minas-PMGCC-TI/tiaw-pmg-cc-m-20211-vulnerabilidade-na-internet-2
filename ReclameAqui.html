@@ -12,6 +12,23 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+<style>
+.grid-container {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: 200px 200px 200px;
+  background-color: #343a40;
+  padding: auto;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 15px;
+  text-align: left;
+}
+</style>
 <body>
 <header>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -70,7 +87,9 @@
          <h2>Lista de Lojas:</h2>
         <br>
         <ul id="listaLojas"
-        <li><a href="#"><h3>A</h3></a></li>
+<div class="grid-container">
+  <div class="grid-item">
+  <li><a href="#"><h3>A</h3></a></li>
         <li><a href="https://www.americanas.com.br/">Americanas</a></li>
         <li><a href="https://www.amazon.com.br/">Amazon</a></li>
         <li><a href="#"><h3>B</h3></a></li>
@@ -86,7 +105,9 @@
         <li><a href="https://www.hometeka.com.br/">Hometeka</a></li>
         <li><a href="#"><h3>H</h3></a></li>
         <li><a href="https://www.ikea.com/pt/pt/">Ikea</a></li>
-        <li><a href="#"><h3>I</h3></a></li>
+  </div>
+  <div class="grid-item">
+   <li><a href="#"><h3>I</h3></a></li>
         <li><a href="#"><h3>J</h3></a></li>
         <li><a href="#"><h3>K</h3></a></li>
         <li><a href="https://www.kabum.com.br/">KaBuM!</a></li>
@@ -98,7 +119,9 @@
         <li><a href="https://www.mercadolivre.com.br/">Mercado Livre</a></li>
         <li><a href="#"><h3>N</h3></a></li>
         <li><a href="#"><h3>O</h3></a></li>
-        <li><a href="#"><h3>P</h3></a></li>
+  </div>
+  <div class="grid-item">
+  <li><a href="#"><h3>P</h3></a></li>
         <li><a href="https://www.polishop.com.br/">Polishop</a></li>
         <li><a href="https://www.pontofrio.com.br/">Ponto Frio</a></li>
         <li><a href="#"><h3>Q</h3></a></li>
@@ -110,9 +133,10 @@
         <li><a href="#"><h3>U</h3></a></li>
         <li><a href="#"><h3>V</h3></a></li>
         <li><a href="https://www.verdemaratevoce.com.br/">Verdemar</a></li>
-         
-    </ul> 
-    <br><br><br>
+  </div>  
+  
+</div>
+    </ul>
     <script>
         function searchbar() {
             var input, filter, ul, li, a, i, txtValue;
