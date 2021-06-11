@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SabeWeb</title>
+    <title>SafeWeb</title>
     <meta name="description" content="Site para conferir se uma compra e confiavel">
     <meta name="keywords" content="compras">
     <meta name="author" content="Vinicius Dumont">
@@ -40,7 +40,7 @@
 
             <form class="form-inline my-2 my-lg-0">
                 <div class="input-group input-group-sm">
-                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Procure uma loja">
+                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="myInput" onkeyup="searchbar()" placeholder="Procure uma loja">
                     <div class="input-group-append">
                         <button type="button" class="btn btn-secondary btn-number">
                             <i class="fa fa-search"></i>
@@ -48,6 +48,72 @@
                     </div>
                 </div>
             </form>
+             <h2>Lista de Lojas:</h2>
+        <br>
+        <ul id="listaLojas"
+        <li><a href="#"><h3>A</h3></a></li>
+        <li><a href="https://www.americanas.com.br/">Americanas</a></li>
+        <li><a href="https://www.amazon.com.br/">Amazon</a></li>
+        <li><a href="#"><h3>B</h3></a></li>
+        <li><a href="#"><h3>C</h3></a></li>
+        <li><a href="https://www.casasbahia.com.br/">Casas Bahia</a></li>
+        <li><a href="https://www.camicado.com.br/">Camicado</a></li>
+        <li><a href="#"><h3>D</h3></a></li>
+        <li><a href="#"><h3>E</h3></a></li>
+        <li><a href="https://www.elcorteingles.pt/">El Corte Ingles</a></li>
+        <li><a href="#"><h3>F</h3></a></li>
+        <li><a href="https://www.fastshop.com.br/web/">Fast Shop</a></li>
+        <li><a href="#"><h3>G</h3></a></li>
+        <li><a href="https://www.hometeka.com.br/">Hometeka</a></li>
+        <li><a href="#"><h3>H</h3></a></li>
+        <li><a href="https://www.ikea.com/pt/pt/">Ikea</a></li>
+        <li><a href="#"><h3>I</h3></a></li>
+        <li><a href="#"><h3>J</h3></a></li>
+        <li><a href="#"><h3>K</h3></a></li>
+        <li><a href="https://www.kabum.com.br/">KaBuM!</a></li>
+        <li><a href="#"><h3>L</h3></a></li>
+        <li><a href="https://www.lebiscuit.com.br/">Le Biscuit</a></li>
+        <li><a href="https://www.liderinteriores.com.br/">Líder Interiores</a></li>
+        <li><a href="#"><h3>M</h3></a></li>
+        <li><a href="https://www.magazineluiza.com.br/">Magazine Luisa</a></li>
+        <li><a href="https://www.mercadolivre.com.br/">Mercado Livre</a></li>
+        <li><a href="#"><h3>N</h3></a></li>
+        <li><a href="#"><h3>O</h3></a></li>
+        <li><a href="#"><h3>P</h3></a></li>
+        <li><a href="https://www.polishop.com.br/">Polishop</a></li>
+        <li><a href="https://www.pontofrio.com.br/">Ponto Frio</a></li>
+        <li><a href="#"><h3>Q</h3></a></li>
+        <li><a href="#"><h3>R</h3></a></li>
+        <li><a href="https://www.ricardoeletro.com.br/">Ricardo Eletro</a></li>
+        <li><a href="#"><h3>S</h3></a></li>
+        <li><a href="https://www.shoptime.com.br/">Shoptime</a></li>
+        <li><a href="#"><h3>T</h3></a></li>
+        <li><a href="#"><h3>U</h3></a></li>
+        <li><a href="#"><h3>V</h3></a></li>
+        <li><a href="https://www.verdemaratevoce.com.br/">Verdemar</a></li>
+         
+    </ul>
+
+    </div>    
+
+    <script>
+        function searchbar() {
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("listaLojas");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a","h3")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+        </script>
         </div>
     </div>
   </nav>
