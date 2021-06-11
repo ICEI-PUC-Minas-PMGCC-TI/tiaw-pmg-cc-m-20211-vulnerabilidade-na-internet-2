@@ -13,6 +13,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="searchbar.js"></script> 
 </head>
+<style>
+    .Searchbar{
+        text-align: center;
+        width:auto;
+        padding:200px;
+    }    
+</style>
 <body>
 <header>
  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -51,11 +58,12 @@
 
 <main>
 <body>
-    <form class="form-inline my-2 my-lg-0">
+    <form class="Searchbar">
                 <div class="input-group input-group-sm">
                     <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="myInput" onkeyup="searchbar()"placeholder="Procure uma loja">
                 </div>
-            
+              </form>
+    
         <ul id="listaLojas">
         <h2>Lista de Lojas:</h2>
         <li><a href="#"><h3>A</h3></a></li>
@@ -102,7 +110,6 @@
     </ul>
 
     </div>    
-    </form>
 
     <script>
         function searchbar() {
