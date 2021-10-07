@@ -5,15 +5,12 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 ## Alunos integrantes da equipe
 
 * Matheus Fortes Vimieiro Lage
-* Vinicius Andreata Dumont
 * Samuel Lincoln de Oliveira Gomes
-* Davi Lorenzo Bambirra Braga
 * Guilherme Alves Sá e Silva
 
 ## Professores responsáveis
 
-* Rommel Vieira Carneiro
-* Fatima de Lima Procopio Duarte
+* Wladmir Brandao
 
 ## Instruções de utilização
 
