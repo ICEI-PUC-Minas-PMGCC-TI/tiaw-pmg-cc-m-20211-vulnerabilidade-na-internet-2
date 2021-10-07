@@ -1,6 +1,4 @@
-# Nome do projeto
-
-Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
+# SafeWeb
 
 ## Alunos integrantes da equipe
 
